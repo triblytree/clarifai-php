@@ -1,3 +1,6 @@
+# Note
+Unmaintained fork of https://github.com/fabriceclementz/clarifai-php that supports PHP 5.4.
+
 # Clarifai API Client
 
 [![Latest Stable Version](https://poser.pugx.org/fabriceclementz/clarifai-php/v/stable)](https://packagist.org/packages/fabriceclementz/clarifai-php)
