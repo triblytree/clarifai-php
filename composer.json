@@ -4,21 +4,11 @@
     "homepage": "https://github.com/fabriceclementz/clarifai-php",
     "license": "MIT",
     "require": {
-        "php": ">=5.4",
-        "guzzlehttp/guzzle": "5.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.0",
-        "mockery/mockery": "^0.9.8"
+        "php": ">=5.4"
     },
     "autoload": {
         "psr-4": {
             "Fab\\Clarifai\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Fab\\Clarifai\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -26,8 +16,5 @@
             "name": "Fabrice Clementz",
             "email": "fabrice.clementz@neuf.fr"
         }
-    ],
-    "scripts": {
-        "test": "vendor/bin/phpunit"
-    }
+    ]
 }
