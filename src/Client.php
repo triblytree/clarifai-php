@@ -71,14 +71,14 @@ class Client
             $body['inputs'][] = Input::fromUrl($url)->format();
         }
 
-        $response = $this->client->send($this->client->createRequest('POST', $this->baseUrl.'/models/'.$modelId.'/outputs', [
+        $response = $this->client->request('POST', $this->baseUrl.'/models/'.$modelId.'/outputs', [
             'headers' => [
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
                 'Authorization' => 'Bearer ' . $this->accessToken,
             ],
             'json' => $body,
-        ]));
+        ]);
 
         return json_decode($response->getBody(), true);
     }
