@@ -90,14 +90,13 @@ class Client
      */
     public function accessToken()
     {
-        $response = $this->client->send($this->client->createRequest('POST', $this->baseUrl . '/token', [
+        $response = $this->client->request('POST', $this->baseUrl . '/token', [
             'headers' => [
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
             ],
             'auth' => [$this->clientId, $this->clientSecret],
-        ]));
-
+        ]);
         return json_decode($response->getBody(), true);
     }
 }
